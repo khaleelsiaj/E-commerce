@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header__container {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    background-color: #72c1b2;
+    top: 0;
+}
+
+.header__a {
+    margin-left: 2%;
+    width: 50%;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    padding-top: 0rem;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.cart-icon {
+    padding-top: 5px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.cart-icon a {
+    color: black;
+}
+
+.font__a {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.search__div {
+    display: flex;
+    background: #ffffff;
+    height: fit-content;
+    border-radius: 25px;
+}
+
+.search__div input {
+    padding: 5px;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+}
+
+.icon__div {
+    padding: 8px;
+    display: flex;
+    border-radius: 50px;
+    background: #216e60;
+    font-size: 25px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoration__container {
+    border: solid 1px #72c1b2;
+    background-color: white;
+    font-size: 14px;
+    width: 90px;
+    padding: 1.5px;
+    border-radius: 2.2rem;
+}
+
+#search ::placeholder {
+    color: rgb(143, 140, 140);
+    font-weight: initial;
+    font-size: 12px;
+}
+
+.decoration__container::placeholder {
+    color: rgb(143, 140, 140);
+    font-weight: initial;
+    font-size: 12px;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin: 10px;
+}
+
+.lebel__decoration input {
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    width: 70px;
+    padding: 1.5px;
+    border-radius: 3rem;
+}
+
+.lebel__decoration input i {
+    position: absolute;
+}
+
+.lebel__decoration input::placeholder {
+    padding-left: 3px;
+    color: rgb(143, 140, 140);
+    font-weight: initial;
+    font-size: 12px;
+}
+
+.search__a {
+    color: black;
+}
+
+.anchor__class {
+    background-color: #124239;
+    border-radius: 2rem;
+    position: absolute;
+    width: 50%;
+}
+
+.input__div {
+    position: relative;
+}
+
+#category {
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-weight: initial;
+    font-size: 12px;
+    background: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 97px;
+    padding: 1.5px;
+    border: none;
+}
+
+.choice {
+    padding-top: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.choice button a {
+    color: black;
+    font-weight: initial;
+}
+
+.button1__class {
+    padding-right: 20px;
+}
+
+button {
+    font-size: 30px;
+    margin: 0.4rem;
+    border: 0.1rem solid #72c1b2;
+    padding: 0.9rem;
+    border-radius: 2.2rem;
+    color: black;
+    font-weight: initial;
+}
+
+.choice .button1 {
+    background-color: #72c1b2;
+}
+
+.choice div button {
+    margin-top: 20px;
+}
+
+.choice .button2 {
+    background-color: white;
+}
+
+.choice .button2:hover {
+    background-color: #72c1b2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.addBtn {
+    font-size: 50px;
+    background-color: white;
+    border: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #72c1b2;
+    text-align: center;
+    padding: 20px 0px;
+    height: 40px;
+    margin-top: 30px;
+    bottom: 0;
+    left: 0;
+}
+
+.noResults {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+
+.sort__div {
+    margin: 10px 10px 20px 50px;
+}
+
+.sort__div span {
+    font-size: 30px;
+}
+
+.sort__div div {
+    margin: 10px 0px 0px 10px;
+}
+
+.sort__div input {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.rightDiv {
+    width: 35vw;
+}
+
+.rightDiv div {
+    float: right;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .choice {
+        display: block;
+    }
+    .button1__class {
+        display: flex;
+        padding: 0px;
+        margin-left: 20vw;
+    }
+    .rightDiv {
+        margin-left: 10vw;
+    }
+    .rightDiv div {
+        margin-right: 0px;
+    }
+}

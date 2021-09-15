@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/cart.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/customer.css" type="text/css" />
+    <title>E-commerce Website</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://use.fontawesome.com/c4218aa667.js"></script>
+    <script src="https://use.fontawesome.com/a2ef380c8e.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header__container">
+      <a href="index.html " class="header__a">E-commerce</a>
+      <div class="tabs">
+        <div class="cart-icon">
+          <a href="cart.html"><i class="fad fa-shopping-cart"></i></a>
+        </div>
+        <div class="search-block">
+          <div class="search__div">
+            <input type="text" id="search" name="search" placeholder="Search" />
+            <div class="icon__div">
+              <i id="searchBtn" class="fa fa-search" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="price-container">
+            <label class="lebel__decoration"
+              ><input type="text" id="priceFrom" placeholder=" From" /><i
+                class="fa fa-usd"
+                aria-hidden="true"
+              ></i
+            ></label>
+            <label class="lebel__decoration"
+              ><input type="text" id="priceTo" placeholder=" To" /><i
+                class="fa fa-usd"
+                aria-hidden="true"
+              ></i
+            ></label>
+          </div>
+          <div class="category-container">
+            <select id="category">
+              <option value="0" disabled selected>Category</option>
+              <option value="All">All</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Technology">Technology</option>
+              <option value="Beauty">Beauty</option>
+              <option value="Cosmetics">Cosmetics</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Toys">Toys</option>
+              <option value="Games">Games</option>
+              <option value="Furniture">Furniture</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="choice">
+    
+      <div class = "button1__class">
+        <button class="button1">
+          <a href="customer.html " class="header__a">Customer</a>
+        </button>
+        <button class="button2">
+          <a href="seller.html " class="header__a">Seller</a>
+        </button>
+      </div>
+      <div class="rightDiv">
+        <div>
+          <div class="btns-container">
+            <p>View</p>
+            <button class="view-btn" id="list-view-btn">list</button>
+            <button class="view-btn selected" id="grid-view-btn">grid</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sort__div">
+      <span class="sortBy"> Sort Price By : </span>
+    </br>
+    <div>
+      <input type="radio" name="sort" id="priceAsc" value="Acending" /><label
+        for="priceAsc"
+        >  Acesnding</label></br>
+        <input
+        type="radio"
+        name="sort"
+        id="priceDesc"
+        value="descending"
+      /><label for="priceDesc">  Descending</label>
+    </div>
+    
+    </div>
+    <div class="container"></div>
+    
+
+    <script src="./scripts/global.js"></script>
+    <script type="text/javascript" src="./scripts/search-filter.js"></script>
+    <script src="./scripts/customer.js"></script>
+  </body>
+</html>

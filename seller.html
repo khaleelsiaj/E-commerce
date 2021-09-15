@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script
+      src="https://kit.fontawesome.com/73d1fc5be5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/seller.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/form.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Seller</title>
+  </head>
+
+  <header class="header">
+    <a href="index.html ">E-commerce</a>
+  </header>
+
+  <body>
+    <div class="div__buttons btn__container">
+      <button class="div__button button__customer">
+        <a href="customer.html ">Customer</a>
+      </button>
+      <button class="div__button button__seller">
+        <a href="seller.html ">Seller</a>
+      </button>
+    </div>
+    <div class="div__product">
+      <h2>
+        Your Products
+        <hr />
+      </h2>
+    </div>
+    <div class="div__card"></div>
+    <div class="btn__container">
+      <button class="div__add" id="addProductBtn">
+        <a href="#">Add Product</a>
+      </button>
+    </div>
+
+    <div id="addEditProductModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <div>
+          <h2 id="formTitle">Add Product</h2>
+          <br />
+          <form id="add-prod-form">
+            <div><label for="prod-name">Name:</label></div>
+            <div>
+              <input
+                class="inp-elemnt"
+                id="name"
+                type="text"
+                name="prod-name"
+              /><input id="id" type="hidden" name="id" />
+            </div>
+            <div><label for="desc">Description:</label></div>
+            <div>
+              <textarea
+                class="textarea"
+                id="desc"
+                name="desc"
+                rows="6"
+                cols="25"
+              ></textarea>
+            </div>
+            <div><label for="price">Price:</label></div>
+            <div>
+              <input class="inp-elemnt" id="price" type="text" name="price" />
+            </div>
+            <div><label for="category">Category:</label></div>
+            <div>
+              <select class="inp-elemnt" id="category" name="category">
+                <option value="0" disabled selected>Category</option>
+
+                <option value="Electronics">Electronics</option>
+                <option value="Technology">Technology</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Cosmetics">Cosmetics</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Toys">Toys</option>
+                <option value="Games">Games</option>
+                <option value="Furniture">Furniture</option>
+              </select>
+            </div>
+            <div><label for="imagUrl">Image Url:</label></div>
+            <div>
+              <input
+                class="inp-elemnt"
+                type="text"
+                id="imagUrl"
+                name="imagUrl"
+              />
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+              <input
+                type="submit"
+                class="float-r subm"
+                id="add-button"
+                value="Add"
+              />
+            </div>
+            <div>
+              <input type="button" class="subm" id="cancelBtn" value="Cancel" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./scripts/global.js"></script>
+    <script type="text/javascript" src="./scripts/add-edit.js"></script>
+
+    <script src="./scripts/seller.js"></script>
+  </body>
+</html>

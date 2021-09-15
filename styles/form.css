@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+#add-prod-div {
+    margin: 10vh auto;
+    width: 450px;
+}
+
+#add-prod-div h2 {
+    margin: 6px auto;
+    text-align: center;
+    color: #0ba589;
+    font-family: "Montserrat", sans-serif;
+}
+
+#add-prod-form {
+    display: grid;
+    grid-template-columns: 100px 280px;
+}
+
+#add-prod-form input:focus,
+#add-prod-form textarea:focus {
+    border: 1px solid #196b5c !important;
+    box-shadow: 0 0 3px #196b5c !important;
+    -moz-box-shadow: 0 0 3px #196b5c !important;
+    -webkit-box-shadow: 0 0 3px #196b5c !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+#add-prod-div div {
+    padding: 3px;
+    margin-top: 3px;
+}
+
+.inp-elemnt {
+    padding-left: 4px;
+    width: 100%;
+    margin: 1px;
+    height: 25px;
+    border: 1px solid #10473d;
+    color: #084d40;
+    background-color: #e9f5f3;
+    font-weight: bold;
+    font-size: large;
+    font-family: "Montserrat", sans-serif;
+}
+
+.textarea {
+    padding: 4px;
+    width: 98%;
+    border: 1px solid #10473d;
+    color: #084d40;
+    background-color: #e9f5f3;
+    font-weight: bold;
+    font-size: large;
+    font-family: "Montserrat", sans-serif;
+}
+
+.float-r {
+    float: right;
+}
+
+#add-prod-div label {
+    display: inline-block;
+    font-weight: bold;
+    color: #196658;
+    font-family: "Montserrat", sans-serif;
+}
+
+.subm {
+    padding: 6px;
+    width: 45px;
+    background-color: #196b5c;
+    outline: none;
+    color: #a5e6da;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(154, 229, 231);
+    background-color: rgba(154, 229, 231, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 550px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form label {
+    margin: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    #add-prod-div {
+        width: 90%;
+    }
+    .modal-content {
+        width: 100%;
+    }
+}
