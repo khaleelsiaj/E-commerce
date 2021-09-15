@@ -1,4 +1,4 @@
-# Ecommerce Project - Team4
+# Ecommerce Project
 
 ## What is this website?
   This website is an e-commerce responsive online shopping website, where the customer can see all the available products and search for a specific item also the customer can filter items by price or category, and he can add items to cart, delete them from cart and see total price of items in cart.
@@ -25,9 +25,4 @@ to run the project you need to:
 
 - Open the HTML on your browser.
 
-## Team members
-Our team members are:
-- [Sarah Al-Sharif](https://github.com/sarah-alsharif0)
-- [Sarah Abu Zeineh](https://github.com/saraAAZ)
-- [Khaleel Siaj](https://github.com/khaleelsiaj)
-- [Obaid Nieroukh](https://github.com/obaidofj)
+
